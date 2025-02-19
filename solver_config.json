@@ -3,11 +3,12 @@
     "default_params": {
       "time_limit": 300
     },
-    "optimizer_type": "Routing",
+    "optimizer_type": "Constraints Programming TSP Solver",
     "description": "TSP solver using OR-Tools' Routing library. The solver constructs a routing model using the provided distance matrix and finds a minimum-cost tour that visits each city exactly once and returns to the depot.",
     "compatible_problems": [
       "Traveling Salesman Problem"
     ],
+    
     "parameters": {
       "time_limit": {
         "type": "int",
@@ -17,6 +18,11 @@
     "requirements": [
       "ortools",
       "qubots"
+    ],
+    "keywords": [
+      "ortools",
+      "constraints programming",
+      "TSP solver"
     ]
   }
   
