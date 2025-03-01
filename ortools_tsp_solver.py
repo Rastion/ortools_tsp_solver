@@ -9,7 +9,7 @@ class ORToolsTSPSolver(BaseOptimizer):
     routing model over the cities (with depot 0), uses the distance matrix from the TSP problem,
     and extracts the tour from the solution.
     """
-    def __init__(self, time_limit=300):
+    def __init__(self, time_limit=5):
         self.time_limit = time_limit
 
     def optimize(self, problem, initial_solution=None, **kwargs):
